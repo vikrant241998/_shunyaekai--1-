@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-image: url("./../image/submarine/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    /* padding-top: 90px; */
+    margin-top: 70px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 75%;
+    height: auto;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .banner-img img {
+        width: unset;
+    }
+}
+
+@media (max-width:992px) {
+    .banner {
+        height: 100%;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-image {
+        width: 100%;
+        max-width: 75%;
+        height: auto;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* block*/
+.use-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.use-case {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 75%;
+}
+
+.use-case-title {
+    font-family: productBold;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.use-case-description {
+    /* font-family: productRegular;
+    font-size: 1.1rem; */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.use-case-image {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+@media (min-width: 1920px) {
+    .banner-img img {
+        width: 90%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+
+    .use-case {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width:380px) {
+    .use-case-title {
+        line-height: 30px;
+    }
+}

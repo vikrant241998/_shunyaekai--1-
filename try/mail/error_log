@@ -1,0 +1,12 @@
+[24-May-2022 12:09:17 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 10
+[24-May-2022 12:09:17 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 12
+[24-May-2022 12:09:17 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 13
+[24-May-2022 12:09:17 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 13
+[24-May-2022 12:09:17 UTC] PHP Warning:  require_once(class.phpmailer.php): failed to open stream: No such file or directory in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 15
+[24-May-2022 12:09:17 UTC] PHP Fatal error:  require_once(): Failed opening required 'class.phpmailer.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 15
+[24-May-2022 12:26:16 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 10
+[24-May-2022 12:26:16 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 12
+[24-May-2022 12:26:16 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 13
+[24-May-2022 12:26:16 UTC] PHP Notice:  Undefined index: attach_file in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 13
+[24-May-2022 12:26:16 UTC] PHP Warning:  require_once(class.phpmailer.php): failed to open stream: No such file or directory in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 15
+[24-May-2022 12:26:16 UTC] PHP Fatal error:  require_once(): Failed opening required 'class.phpmailer.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ln3m3d303i6h/public_html/try.shunyaekai.tech/mail/send_mail.php on line 15

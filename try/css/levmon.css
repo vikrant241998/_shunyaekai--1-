@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-image: url("./../image/lig-mon/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    padding-top: 90px;
+    margin-top: 70px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-content-img {
+    width: 180px;
+
+}
+
+@media (max-width: 1024px) {
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .banner-img img {
+        width: unset;
+    }
+
+    .banner-img img {
+        width: 100%;
+        max-width: 75%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-img img {
+        width: 100%;
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width:480px) {
+    .banner-content-img {
+        width: 160px;
+        height: 80px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+    }
+}

@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  background-image: url("./../image/contact/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  padding-top: 90px;
+  margin-top: 70px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr:not([size]) {
+  width: 33%;
+  height: 1px;
+  border-radius: 8px;
+  background-color: black;
+  opacity: 30%;
+  margin: 10px 0px 20px 0;
+}
+
+.banner-description {
+  max-width: 60%;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width:980px) {
+  .banner-description {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* section content */
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.content-description {
+  max-width: 75%;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.location-name {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.career-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.career-item {
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+
+.career-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 20px;
+}
+
+.career-title {
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
+.career-description {
+  max-width: 75%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.career-apply-button {
+  margin: 20px 0;
+  cursor: pointer;
+  color: #1866d2;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 2px 20px;
+  text-decoration: none;
+  border: 1px solid #1866d2;
+}
+
+.career-apply-button:hover {
+  color: white;
+  background-color: #1866d2;
+}
+
+.internship-block {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.internship-description {
+  max-width: 50%;
+  text-align: center;
+}
+
+.apply-button {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #1866d2;
+  line-height: 32px;
+  font-size: 24px;
+  padding: 6px 30px;
+  border: 1px solid #1866d2;
+}
+
+.apply-button:hover {
+  color: white;
+  background-color: #1866d2;
+}
+
+
+
+@media (max-width:991px) {
+  .content-description {
+    max-width: 75%;
+  }
+
+  .internship-description {
+    max-width: 75%;
+  }
+}
+
+@media (max-width:767px) {
+  .career-container {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width:480px) {
+  .content-description {
+    max-width: 90%;
+  }
+
+  .location-name {
+    font-size: 20px;
+  }
+
+  .internship-description {
+    max-width: 90%;
+  }
+}
+
+
+/* internship model */
+
+.internship {
+  background-color: rgba(102, 98, 98, 0.4);
+  display: none;
+  margin-top: 100px;
+  /* height: 100vh; */
+}
+
+.internship-title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
+.internship-model {
+  overflow: unset;
+  padding: 40px 30px 0 30px;
+  width: 475px;
+  /* max-width: 25%; */
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 10%);
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+/* resume upload */
+
+.sr-only {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.btn-upload {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  color: #fff;
+  background-color: rgb(25, 129, 233);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.closebtn {
+  font-family: productBold;
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.intern-form {
+  width: 100%;
+}
+
+.form-intern {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 18px;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: white
+}
+
+.textarea-intern {
+  width: 100%;
+  background-color: white;
+  border-color: gray;
+  border-radius: 5px;
+  opacity: 1;
+  line-height: 2rem;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+textarea.textarea-intern::placeholder {
+  font-size: 14px;
+}
+
+.intern-submit {
+  border: none;
+  margin: 10px 0;
+  padding: 5px 40px;
+  background-color: rgb(25, 129, 233);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+
+@media (max-width:520px) {
+  .internship-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .internship-model {
+    max-width: 90%;
+  }
+}

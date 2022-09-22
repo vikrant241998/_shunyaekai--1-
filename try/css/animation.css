@@ -1,0 +1,57 @@
+/* animation effect */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+.in-down {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+/* .banner-img {
+    display: none;
+}
+#animate {
+    position: relative;
+    animation: slide 4s 1;
+    right: 0%;
+}
+@keyframes slide {
+    from {
+        right: 0%;
+    }
+    to {
+        right: 32%;
+    }
+} */
+/* @media (max-width:480px) {
+    #animate {
+        position: absolute;
+        animation: slide 4s 1;
+        right: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <%- include('./style'); %>
+  </head>
+  <body>
+    <table>
+      <h1 style="text-align: center"><%= profile %></h1>
+      <tr>
+        <td colspan="3">
+          <div class="name"><%= name %></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="details-td">
+          <div class="label">Mobile</div>
+          :
+          <div class="mobile"><%= mobile %></div>
+          <br />
+          <div class="label">Email</div>
+          :
+          <div class="email"><%= email %></div>
+          <br />
+          <div class="label">Collage</div>
+          :
+          <div class="email"><%= collage %></div>
+        </td>
+        <td class="description-td">
+          <div class="description" spellcheck="false"><%= description %></div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

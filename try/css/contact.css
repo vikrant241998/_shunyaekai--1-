@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  background-image: url("./../image/contact/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  padding-top: 90px;
+  margin-top: 70px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr:not([size]) {
+  width: 33%;
+  height: 1px;
+  border-radius: 8px;
+  background-color: black;
+  opacity: 30%;
+  margin: 10px 0px 20px 0;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* section content */
+.contact-container {
+  display: flex;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icon {
+  width: 100%;
+  max-width: 30%;
+  margin-bottom: -55px;
+  z-index: 999;
+}
+
+.contact-box {
+  max-width: 90%;
+  background-color: whitesmoke;
+  display: flex;
+  padding: 100px 0 20px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.contact-description {
+  max-width: 75%;
+}
+
+.link-contact {
+  font-size: 16px;
+  color: #1866d2;
+  text-decoration: none;
+}
+
+.phone-icon {
+  cursor: pointer;
+  width: 40px;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: 1px solid #1866d2;
+  border-radius: 5px;
+  color: #1866d2;
+  margin: 10px 0;
+  padding: 0px 15px;
+  font-size: 16px;
+}
+
+.btn-icon-call {
+  background-color: transparent;
+  border: 1px solid #1866d2;
+  border-radius: 5px;
+  color: #1866d2;
+  margin: 10px 0;
+  padding: 0px 15px;
+  font-size: 16px;
+  cursor: unset;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-contact button {
+  background-color: transparent;
+  border: 1px solid #1866d2;
+  border-radius: 5px;
+  color: #1866d2;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-contact button:hover {
+  color: white;
+  background-color: #1866d2;
+}
+
+.map {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-content {
+  width: 100%;
+  max-width: 75%;
+  height: 30vh;
+  border-radius: 15px;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25px;
+  z-index: 999;
+  background-color: white;
+}
+
+.flag {
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.location-name {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 10);
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.call-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.contact-inner-mobile {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.btn-icon-location {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-hide {
+  display: none;
+}
+
+
+@media (max-width:1440px) {
+  /* .contact-icon {
+    max-width: 35%;
+  } */
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+  .contact-container {
+    column-gap: 15px;
+  }
+
+  .contact-description {
+    max-width: 90%;
+  }
+
+  /*
+  .contact-icon {
+    max-width: 40%;
+  } */
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .contact-container {
+    column-gap: 1px;
+  }
+
+  .contact-icon {
+    max-width: 40%;
+  }
+
+  .contact-box {
+    padding: 80px 0 20px 0;
+  }
+
+  .map-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width:767px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-box {
+    padding: 80px 0 20px 0;
+  }
+
+  .contact-box {
+    max-width: 75%;
+  }
+
+  .contact-icon {
+    max-width: 25%;
+  }
+
+  .map-content {
+    max-width: 100%;
+  }
+
+  .map {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:425px) {
+  .contact-icon {
+    max-width: 30%;
+  }
+
+  .contact-description {
+    max-width: 90%;
+  }
+
+  .contact-box {
+    max-width: 95%;
+  }
+
+  .contact-block {
+    padding: 0px 0 0 0;
+  }
+}
